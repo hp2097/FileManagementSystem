@@ -1,11 +1,8 @@
 package storage_management;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+
 
 public class Memory implements IOperations {
 
@@ -25,6 +22,7 @@ public class Memory implements IOperations {
 
 	}
 
+	//For Accesing object and Creating object only once.
 	public static Memory memory(int totalBlocks){
 		if(memoryObject !=null)
 		{
