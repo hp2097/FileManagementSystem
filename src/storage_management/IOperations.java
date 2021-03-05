@@ -10,4 +10,5 @@ public interface IOperations {
 	   int getAvailaibleBlock();
 	   List<File> getTotalFilesInMemory();
 	   String[] getBlockArray();
+	   File getFileFromMemory(String fileId);
 }

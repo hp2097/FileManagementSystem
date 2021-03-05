@@ -40,5 +40,12 @@ class TestCaseForProject {
 		assertEquals("\nYour file:- "+ fileId +" is Deleted ",memory.deleteFile(fileId),"File named Hp Will be deleted");
 	}
 	
+	@Test
+	void testReadFile() {
+		File founFile=memory.getFileFromMemory("hp");
+		int data[]=new int[1];
+		data[0]=0;
+		assertEquals("\nFor the File:- "+"hp"+" the blocks are allocated in the memory---->  "+Arrays.toString(founFile.getNumberOfBlocksAllocated()),memory.readFileFromMemory("hp"),"Successfully Read file");
+	}
 }
 	
