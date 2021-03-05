@@ -34,6 +34,11 @@ class TestCaseForProject {
 		assertEquals("\nFile is saved\n\nTotal Availaible blocks after saving File are:-"+1023+"\nBlocks allocated to the File in the memoryhp ---> "+Arrays.toString(data),memory.savingFile(file),"Save Method Should Save the file name HP");
 	}
 	
+	@Test
+	 void testDeleteFile() {
+		String fileId="hp";
+		assertEquals("\nYour file:- "+ fileId +" is Deleted ",memory.deleteFile(fileId),"File named Hp Will be deleted");
+	}
 	
 }
 	
